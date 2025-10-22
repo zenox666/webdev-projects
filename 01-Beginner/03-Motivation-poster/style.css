@@ -1,0 +1,22 @@
+body {
+  background-color: black;
+}
+
+#lingang {
+  width: 100%;
+  border: 5px solid white;
+}
+
+h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.guli {
+  color: white;
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 7.5%;
+}

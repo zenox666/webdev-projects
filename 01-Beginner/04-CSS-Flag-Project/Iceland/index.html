@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iceland flag</title>
+    <style>
+      .flag {
+        background-color: #02529c;
+        width: 900px;
+        height: 600px;
+        position: relative;
+      }
+      .flag div:nth-child(1)::before {
+        content: "";
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        height: 120px;
+        top: 240px;
+      }
+      .flag div:nth-child(1)::after {
+        content: "";
+        background-color: white;
+        position: absolute;
+        width: 120px;
+        height: 100%;
+        left: 240px;
+      }
+      .flag div:nth-child(2)::before {
+        content: "";
+        background-color: #dc1e35;
+        position: absolute;
+        width: 100%;
+        height: 60px;
+        top: 270px;
+      }
+      .flag div:nth-child(2)::after {
+        content: "";
+        background-color: #dc1e35;
+        position: absolute;
+        width: 60px;
+        height: 100%;
+        left: 270px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flag">
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>

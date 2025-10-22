@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turkey flag</title>
+    <style>
+      .flag {
+        background-color: red;
+        width: 900px;
+        height: 600px;
+        position: relative;
+      }
+      .flag div:nth-child(1) {
+        background-color: white;
+        width: 240px;
+        height: 240px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+      }
+      .flag div:nth-child(1)::before {
+        content: "";
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+      }
+      .flag div:nth-child(2) {
+        background-color: white;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        top: 50%;
+        left: 52%;
+        transform: translate(-50%, -50%) rotate(0deg);
+        clip-path: polygon(
+          50% 0%,
+          61% 35%,
+          98% 35%,
+          68% 57%,
+          79% 91%,
+          50% 70%,
+          21% 91%,
+          32% 57%,
+          2% 35%,
+          39% 35%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flag">
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>

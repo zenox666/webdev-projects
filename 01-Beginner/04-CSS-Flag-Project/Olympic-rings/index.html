@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olympic rings</title>
+    <style>
+      .olympics {
+        background-color: #f5f5f5;
+        width: 380px;
+        height: 175px;
+        position: relative;
+        margin: 50px auto;
+      }
+      .ring {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+      }
+      .blue {
+        border: 10px solid #448cb1;
+      }
+      .black {
+        border: 10px solid #000000;
+        left: 130px;
+      }
+      .red {
+        border: 10px solid #df0024;
+        left: 260px;
+      }
+      .yellow {
+        border: 10px solid #fcb131;
+        top: 55px;
+        left: 65px;
+      }
+      .green {
+        border: 10px solid #00a651;
+        top: 55px;
+        left: 195px;
+      }
+
+      .chain {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        border: solid transparent;
+        overflow: hidden;
+        border-width: 50px 0 50px 100px;
+      }
+      .chain::before {
+        content: "";
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: -50px;
+        left: -99.9px;
+        border: 10px solid;
+        border-radius: 50%;
+      }
+      .patch1::before {
+        border-color: #448cb1;
+      }
+      .patch2 {
+        left: 130px;
+      }
+      .patch3 {
+        left: 130px;
+        transform: rotate(100deg);
+      }
+      .patch4 {
+        left: 260px;
+        transform: rotate(100deg);
+      }
+      .patch4::before {
+        border-color: #df0024;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="olympics">
+      <div class="ring blue"></div>
+      <div class="ring black"></div>
+      <div class="ring red"></div>
+      <div class="ring yellow"></div>
+      <div class="ring green"></div>
+
+      <div class="chain patch1"></div>
+      <div class="chain patch2"></div>
+      <div class="chain patch3"></div>
+      <div class="chain patch4"></div>
+    </div>
+  </body>
+</html>

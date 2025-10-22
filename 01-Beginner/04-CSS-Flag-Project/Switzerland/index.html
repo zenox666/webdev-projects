@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switzerland flag</title>
+    <style>
+      .flag {
+        background-color: red;
+        width: 600px;
+        height: 600px;
+        position: relative;
+        border-radius: 20px;
+      }
+      .flag div:nth-child(1) {
+        background-color: white;
+        width: 360px;
+        height: 120px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .flag div:nth-child(2) {
+        background-color: white;
+        width: 120px;
+        height: 360px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flag">
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>
