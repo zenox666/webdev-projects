@@ -41,7 +41,7 @@ h2 {
 }
 
 input[type="text"] {
-  border: 1.5px solid #d0d5da;
+  border: 1.5px solid #ebedf1;
   border-radius: 6px;
   font-size: 14px;
   transition: all 0.3s;
