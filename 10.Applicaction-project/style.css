@@ -437,6 +437,7 @@ input[type="radio"] {
   font-size: 12px;
   font-weight: 500;
   display: grid;
+  row-gap: 10px;
   padding-right: 15px;
   margin-bottom: 35px;
   margin-top: 20px;
